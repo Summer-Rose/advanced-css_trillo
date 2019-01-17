@@ -26,9 +26,13 @@
     // flex-shrink: 0;
     // flex-basis: 18%; //width should be 18% of parent container width
     flex: 0 0 18%; //shortened
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hotel-view {
     background-color: #fff;
+    height: 80rem;
     flex: 1;//grow to fill the remaining space
 }
