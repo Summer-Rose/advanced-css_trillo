@@ -37,6 +37,14 @@ Grey dark 3: #999
     --line: 1px solid var(--color-grey-light-2);
 }
 
+//Breakpoint variables
+$bp-largest: 75em; //1200px (remove layout margin)
+$bp-large: 68.75em; //1100px (decrease font size)
+$bp-medium: 56.25em; //900px (move navigation to top of page)
+$bp-small: 37.5em; //600px (change overview layout to columns)
+$bp-smallest: 31.25em; //500px (move search bar down)
+$bp-micro: 25em; //400px (detail list to single column)
+
 * {
     margin: 0;
     padding: 0;
@@ -51,6 +59,10 @@ Grey dark 3: #999
 html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px 10px/16px(which is browser default) is 62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
 
 body {
